@@ -18,7 +18,18 @@ Framework that allows apps written in different front-end frameworks work togeth
 - Deployable using CDN or docker container
 - Discourages using global state management system like redux.
 
+# Key ideas
+## In-browser module vs Build time module
+Review [this video](https://www.youtube.com/watch?v=Jxqiu6pdMSU&list=PLLUD8RtHvsAOhtHnyGx57EYXoaNsxGrTU&index=2)
+
+Or the whole [play list](https://www.youtube.com/playlist?list=PLLUD8RtHvsAOhtHnyGx57EYXoaNsxGrTU) for better insight into doing mfe using single-spa.
+
+
 # Create App
 To create Apps using single spa first create a root-config, then add mfe applications go it. Refere to this [guide](https://single-spa.js.org/docs/getting-started-overview) for detail.
+
+To add root config: `npx create-single-spa --moduleType root-config`
+
+To add mfe app: `npx create-single-spa --moduleType app-parcel`
 
 
