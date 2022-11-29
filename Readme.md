@@ -33,3 +33,21 @@ To add root config: `npx create-single-spa --moduleType root-config`
 To add mfe app: `npx create-single-spa --moduleType app-parcel`
 
 
+# Exceptions
+1. When trying to add @angular/material by executing `ng add @angular/material`, packages was installed successfully then 
+when it tried to update angular.json following error was thrown.
+
+```
+Your project is not using the default builders for "build". The Angular Material schematics cannot add a theme to the workspace configuration if the builder has been changed.
+```
+Fix: Manually add reference to the material style in angular.json and other places
+OR 
+
+Add @angular/material first then add single-spa-angular
+
+2. Latest angular cli doesn't create environment directory, which `single-spa-angular` required to run.
+
+
+
+
+
