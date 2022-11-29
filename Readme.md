@@ -47,7 +47,10 @@ Add @angular/material first then add single-spa-angular
 
 2. Latest angular cli doesn't create environment directory, which `single-spa-angular` required to run.
 
+3. When tried to create utility module using angular, it threw exception  
 
+```Error: Framework 'angular' is not yet supported for utility microfrontends. Try creating a vanilla utility module (no framework) in the meantime, which are usable by all frameworks.
+```
 
 
 
