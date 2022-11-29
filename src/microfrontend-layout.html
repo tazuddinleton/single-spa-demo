@@ -20,8 +20,10 @@
   <main>
     <route default>
       <!-- <application name="@single-spa/welcome"></application> -->
-      <application name="@kaz/auth"></application>
       <application name="@kaz/products"></application>
+    </route>
+    <route path="auth">
+      <application name="@kaz/auth"></application>
     </route>
   </main>
 </single-spa-router>
