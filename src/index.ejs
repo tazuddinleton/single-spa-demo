@@ -34,14 +34,7 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
-        "@angular/animations": "https://cdn.jsdelivr.net/npm/@angular/animations@14.2.12/fesm2015/animations.mjs",
-        "@angular/core": "https://cdn.jsdelivr.net/npm/@angular/core@14.2.12/fesm2015/core.mjs",
-        "@angular/common": "https://cdn.jsdelivr.net/npm/@angular/common@14.2.12/fesm2015/common.mjs",
-        "@angular/forms": "https://cdn.jsdelivr.net/npm/@angular/forms@14.2.12/fesm2015/forms.mjs",
-        "@angular/platform-browser": "https://cdn.jsdelivr.net/npm/@angular/platform-browser@15.0.1/fesm2015/platform-browser.mjs",
-        "@angular/router": "https://cdn.jsdelivr.net/npm/@angular/router@14.2.12/fesm2015/router.mjs",
-        "rxjs": "https://cdn.jsdelivr.net/npm/rxjs@7.5.6/dist/cjs/index.min.js"
+        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js"
       }
     }
   </script>
@@ -55,6 +48,8 @@
     {
       "imports": {        
         "@kaz/root-config": "http://localhost:9000/kaz-root-config.js",
+        "@kaz/navbar": "http://localhost:4003/main.js",
+        "@kaz/utility": "http://localhost:8080/kaz-utility.js",
         "@kaz/products": "http://localhost:4001/main.js",
         "@kaz/auth": "http://localhost:4002/main.js"
       }
