@@ -17,14 +17,19 @@
 
   -->
 
+  <nav>
+    <application name="@kaz/navbar"></application>
+  </nav>
   <main>
-    <route default>      
-      <application name="@kaz/navbar"></application>
+    <route default>
+      <div>
+        Welcome!!
+      </div>
     </route>
-    <route path="products">      
+    <route path="/products">
       <application name="@kaz/products"></application>
     </route>
-    <route path="auth">
+    <route path="/auth">
       <application name="@kaz/auth"></application>
     </route>
   </main>

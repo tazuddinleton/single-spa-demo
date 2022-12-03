@@ -31,27 +31,25 @@
 
     More information about shared dependencies can be found at https://single-spa.js.org/docs/recommended-setup#sharing-with-import-maps.
   -->
-  <!-- <script type="systemjs-importmap">
+  <script type="systemjs-importmap">
     {
       "imports": {
-        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js"
+        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.1/lib/system/single-spa.min.js"
       }
     }
-  </script> -->
+  </script>
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script">
 
   <!-- Add your organization's prod import map URL to this script's src  -->
   <script type="systemjs-importmap" src="http://localhost:4004/import-map.json"></script>
+  <!-- <script type="systemjs-importmap" src="https://storage.googleapis.com/angular.microfrontends.app/importmap.json"></script> -->
+
 
   <% if (isLocal) { %>
   <script type="systemjs-importmap">
     {
       "imports": {        
-        "@kaz/root-config": "http://localhost:9000/kaz-root-config.js",
-        "@kaz/navbar": "http://localhost:4003/main.js",
-        "@kaz/utility": "http://localhost:8080/kaz-utility.js",
-        "@kaz/products": "http://localhost:4001/main.js",
-        "@kaz/auth": "http://localhost:4002/main.js"
+        "@kaz/root-config": "http://localhost:9000/kaz-root-config.js"
       }
     }
   </script>
@@ -65,11 +63,14 @@
 
   <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.2.0/dist/import-map-overrides.js"></script>
   <% if (isLocal) { %>
-  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.13.0/dist/system.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.13.0/dist/extras/amd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.13.0/dist/extras/named-register.js"></script>
+
   <% } else { %>
-  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.13.0/dist/system.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.13.0/dist/extras/amd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.13.0/dist/extras/named-register.min.js"></script>
   <% } %>
 
 </head>
